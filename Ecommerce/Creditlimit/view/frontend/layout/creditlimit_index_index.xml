@@ -1,0 +1,30 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+
+	<head>
+        <title>Credit Limit Transaction</title>
+        <!--
+		demo
+		<css src="Ecommerce_Creditlimit::css/css.css"/>
+		<script src="Ecommerce_Creditlimit::js/js.js"/>
+		<css src="jquery/fileUploader/css/jquery.fileupload-ui.css"/>
+		<script src="path/file.js" defer="defer"/>
+		<link src="http://url.com" src_type="url"/>
+		<remove src="path/remove/file.css"/>
+
+		-->
+    </head>
+
+    <body>
+
+
+        <referenceContainer name="sidebar.main">
+            <block class="Ecommerce\Creditlimit\Block\Index\Sidebar" name="creditlimit_index_sidebar" before="-" template="Ecommerce_Creditlimit::creditlimit_index_sidebar.phtml"/>
+        </referenceContainer>
+
+        <referenceContainer name="content">
+            <block class="Ecommerce\Creditlimit\Block\Index\Index" name="creditlimit_index_index" template="Ecommerce_Creditlimit::creditlimit_index_index.phtml"/>
+        </referenceContainer>
+
+
+    </body>
+</page>

@@ -1,0 +1,18 @@
+{
+    "creditlimit": {
+        "column": {
+            "id": true,
+            "customer_name": true,
+            "trans_type": true,
+            "credit_amt": true,
+            "debit_amt": true,
+            "balance_amt": true,
+            "trans_date": true,
+            "remark": true,
+            "remarks": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

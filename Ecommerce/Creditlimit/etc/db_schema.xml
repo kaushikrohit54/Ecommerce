@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="creditlimit" resource="default" engine="innodb" comment="Credit Limits">
+        <column xsi:type="int" name="id" padding="6" unsigned="false" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="varchar" name="customer_name" nullable="false" length="100" comment="Customer Name"/>
+        <column xsi:type="int" name="trans_type" nullable="false"  comment="Trans Type"/>
+        <column xsi:type="bigint" name="credit_amt" nullable="false"  comment="Credit Amount"/>
+        <column xsi:type="bigint" name="debit_amt" nullable="false"  comment="Credit Amount"/>
+        <column xsi:type="bigint" name="balance_amt" nullable="false"  comment="Credit Amount"/>
+        <column xsi:type="datetime" name="trans_date" nullable="false" default="CURRENT_TIMESTAMP"  comment="Transaction Date"/>
+        <column xsi:type="varchar" name="remarks" nullable="true"  comment="remarks"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>

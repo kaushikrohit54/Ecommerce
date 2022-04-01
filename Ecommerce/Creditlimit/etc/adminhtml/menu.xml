@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Ecommerce_Creditlimit::parent" title="Creditlimit" module="Ecommerce_Creditlimit" sortOrder="100" resource="Ecommerce_Creditlimit::parent"/>
+		<add id="Ecommerce_Creditlimit::creditlimit" title="Creditlimit Creditlimit" module="Ecommerce_Creditlimit" sortOrder="20" parent="Ecommerce_Creditlimit::parent" action="creditlimit/creditlimit" resource="Ecommerce_Creditlimit::creditlimit"/>
+
+    </menu>
+</config>
